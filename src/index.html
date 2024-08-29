@@ -91,6 +91,28 @@
       box-sizing: border-box;
       display: none; 
     }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer .github-icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
   </style>
 </head>
 <body>
@@ -105,6 +127,13 @@
   <div class="container">
     <div id="player"></div>
   </div>
+
+  <footer>
+    Made by itzzzme 🫰
+    <a href="https://github.com/itzzzme" target="_blank">
+      <img src="https://img.icons8.com/material-outlined/24/ffffff/github.png" alt="GitHub" class="github-icon"/>
+    </a>
+  </footer>
 
   <script src="https://bradmax.com/client/files/player-js/73a9716fd26717763cd2d46fb9e41463645853de_14815/bradmax_player.js"></script>
   <script type="text/javascript">
