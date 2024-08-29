@@ -464,7 +464,6 @@ export default function server() {
     originBlacklist: [],
     originWhitelist: [],
     requireHeader: [],
-    checkRateLimit: createRateLimitChecker(process.env.CORSANYWHERE_RATELIMIT),
     removeHeaders: [
       "cookie",
       "cookie2",
