@@ -1,3 +1,3 @@
-import server from "./libraries/server.js";
+import server from "./lib/server.js";
 
 server();
