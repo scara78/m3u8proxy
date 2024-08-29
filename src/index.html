@@ -109,14 +109,13 @@
   <script src="https://bradmax.com/client/files/player-js/73a9716fd26717763cd2d46fb9e41463645853de_14815/bradmax_player.js"></script>
   <script type="text/javascript">
     var player; 
-
     function play() {
       var url = document.getElementById("url").value;
       var resultDiv = document.getElementById("result");
 
       resultDiv.style.display = "block";
       
-      resultDiv.innerHTML = `<span class="result-label">PROXIED_URL: </span><a href="https://m3u8proxy-ivory.vercel.app/m3u8-proxy?url=${encodeURIComponent(url)}" target="_blank""https://m3u8proxy-ivory.vercel.app/m3u8-proxy?url=${encodeURIComponent(url)}</a>`;
+      resultDiv.innerHTML = `<span class="result-label">PROXIED_URL: </span><a href="https://m3u8proxy-ivory.vercel.app/m3u8-proxy?url=${encodeURIComponent(url)}" target="_blank">"https://m3u8proxy-ivory.vercel.app/m3u8-proxy?url=${encodeURIComponent(url)}</a>`;
 
       if (player) {
         player.destroy();
